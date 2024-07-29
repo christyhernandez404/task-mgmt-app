@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+    <script src="/bootstrap/bootstrap.bundle.min.js"></script>
+    <style>
+        .carousel-item img {
+            height:300px;
+            object-fit: contain;
+            width:auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="'button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="task_dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Create
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="task_creation.html">Create Task</a></li>
+                            <li><a class="dropdown-item" href="#">Create Project</a></li>
+                            <li><a class="dropdown-item" href="task_dashboard.html">Create Dashboard</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item me-2">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-primary" type="submit">Search</button>
+                        </form>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link text-primary" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="carousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/images/Kira.png" class="d-block w-100" alt="Kira">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="text-center text-primary">World Class Task Management Application</h1>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="/images/project.png" alt="project">
+                    <div class="card-body">
+                        <h5 class="card-title">Project</h5>
+                        <p class="card-text">Linking your tasks to a project will allow you to manage the progress of the project. Once team member's complete a task the project's progress % will automatically update.</p>
+                        <a href="#" class="btn btn-primary">Go to Projects</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="/images/roadmap.png" alt="roadmap">
+                    <div class="card-body">
+                        <h5 class="card-title">Roadmaps</h5>
+                        <p class="card-text">With Kira's project roadmap feature, you can get a high-level overview of your project's progress, which can be helpful for keeping team members up-to-date on the project's status and for identifying potential risks or delays.</p>
+                        <a href="#" class="btn btn-primary">Go to Roadmaps</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="/images/dashboard.png" alt="dashboard">
+                    <div class="card-body">
+                        <h5 class="card-title">Dashboard</h5>
+                        <p class="card-text">A Kira dashboard provides a centralized view of key project and issue data in Jira, allowing users to monitor and manage their work efficiently.</p>
+                        <a href="task_dashboard.html" class="btn btn-primary">Go to Dashboards</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
